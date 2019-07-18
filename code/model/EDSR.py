@@ -31,7 +31,6 @@ class EDSR(BaseModel):
 
 		# Pre-processing
 		in_img = mean_shift(self.input)
-		tar_img = mean_shift(self.target)
 
   	# First convolution layer 
 		x = conv_xavier(in_img, num_feats, [3,3])
